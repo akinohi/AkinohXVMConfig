@@ -36,7 +36,7 @@
     "minimapAimIcon": "xvm://res/MinimapAim.png",
     // Scale factor for the minimap aim icon (in percents)
     // Масштаб иконки для артиллерийского прицела (в процентах)
-    "minimapAimIconScale": 50,
+    "minimapAimIconScale": 0,
     // Map zoom by key pressing. Key is defined at file "hotkeys.xc".
     // Увеличение миникарты по нажатию кнопки. Кнопка задается в файле "hotkeys.xc".
     "zoom": {
@@ -45,7 +45,7 @@
       "index": 5,
       // false - does not set zoomed minimap at display center.
       // false - не устанавливать увеличенную миникарту по центру экрана.
-      "centered": false
+      "centered": true
     },
     // Map size label
     // Поле размера карты

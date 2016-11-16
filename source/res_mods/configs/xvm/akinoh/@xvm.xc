@@ -46,19 +46,19 @@
   "definition": {
     // Config author.
     // Автор конфига.
-    "author": "XVM team",
+    "author": "akinoh",
 
     // Config description.
     // Описание конфига.
-    "description": "Default settings for XVM",
+    "description": "Customized settings for XVM by akinoh",
 
     // Address to config updates.
     // Адрес, где выкладываются обновления конфига.
-    "url": "http://www.modxvm.com/",
+    "url": "none",
 
     // Config last modified.
     // Дата последней модификации конфига.
-    "date": "07.11.2016",
+    "date": "2016/11/09 Version.1.20",
 
     // Supported version of the game.
     // Поддерживаемая версия игры.

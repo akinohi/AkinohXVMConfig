@@ -15,7 +15,7 @@
     "enableFreeXpLocker": false,
     // true - Use credits instead of gold as default currency for ammo and equipment
     // true - Использовать кредиты, а не золото как валюту по умолчанию для снарядов и снаряжения
-    "defaultBoughtForCredits": false,
+    "defaultBoughtForCredits": true,
     // true - Hide price button in tech tree
     // true - Прятать кнопку с ценой в дереве исследований
     "hidePricesInTechTree": false,
@@ -42,7 +42,7 @@
     "barracksShowSkills": true,
     // true - Enable removable equipment auto return (Camouflage net, Stereoscope, Toolbox)
     // true - Включить автовозврат съемного оборудования (Маскировочная сеть, Стереотруба, Ящик с инструментами)
-    "enableEquipAutoReturn": false,
+    "enableEquipAutoReturn": true,
     // true - Make vehicle not ready for battle if low ammo
     // true - Сделать машину не готовой к битве если мало снарядов
     "blockVehicleIfLowAmmo": false,
@@ -63,8 +63,8 @@
       "updateInterval": 10000,
       // Axis field coordinates
       // Положение поля по осям
-      "x": 85,
-      "y": 52,
+      "x": 3,
+      "y": 51,
       // Horizontal alignment of field at screen ("left", "center", "right").
       // Горизонтальное выравнивание поля на экране ("left", "center", "right").
       "hAlign": "left",
@@ -248,7 +248,7 @@
       "shadow": {
         "enabled": true,
         "distance": 0,
-        "angle": 0,
+        "angle": 0,        
         "color": "0x000000",
         "alpha": 70,
         "blur": 4,

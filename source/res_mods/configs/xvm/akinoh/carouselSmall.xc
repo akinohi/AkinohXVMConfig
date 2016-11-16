@@ -89,7 +89,7 @@
       {
         "enabled": true,
         "x": 24, "y": 16,
-        "format": "<b><font face='$FieldFont' size='12' color='{{v.c_winrate|#C8C8B5}}'>{{v.winrate%2d~%}}</font></b>",
+        "format": "<b><font face='$FieldFont' size='12' color='#CFCFCF'>{{v.winrate%2d~%}}</font></b>",
         "shadow": ${ "def.textFieldShadow" }
       }
     ]

@@ -14,10 +14,10 @@
       "alpha": "{{a:spotted}}",
       // x position.
       // положение по горизонтали.
-      "x": 88,
+      "x": 8,
       // y position.
       // положение по вертикали.
-      "y": -2,
+      "y": -8,
       // Horizontal alignment
       // Выравнивание по горизонтали
       "align": "center",
@@ -26,51 +26,53 @@
       "bindToIcon": true,
       // enemy spotted status marker format.
       // формат маркера статуса засвета.
-      "format": "<font color='{{c:spotted}}'>{{spotted}}</font>",
+      "format": "{{spotted}}",
       // shadow (see below).
       // настройки тени (см. ниже).
       "shadow": {}
     },
     // XMQP service marker definition.
     // Шаблон маркера сервиса XMQP.
-    "xmqpServiceMarker": {
-      "x": 88, "y": -2, "align": "center", "bindToIcon": true,
-      "textFormat": {
-        "font": "xvm",
-        "size": 24
-      },
-      "format": "<font color='{{alive?{{x-spotted?#FFBB00|{{x-sense-on?#D9D9D9|#BFBFBF}}}}|#FFFFFF}}' alpha='{{alive?#FF|#80}}'>{{alive?{{x-spotted?&#x70;|{{x-sense-on?&#x70;|{{x-enabled?&#x7A;}}}}}}}}</font>",
-      "shadow": {}
-    },
+    //"xmqpServiceMarker": {
+    //  "x": -80, "y": -8, "align": "center", "bindToIcon": true,
+    //  "textFormat": {
+    //    "font": "xvm",
+    //    "size": 23
+    //  },
+    //  "format": "<font color='{{alive?{{x-spotted?#FFBB00|{{x-sense-on?#D9D9D9|#BFBFBF}}}}|#FFFFFF}}' alpha='{{alive?#FF|#80}}'>{{alive?{{x-spotted?&#x70;|{{x-sense-on?&#x70;|{{x-enabled?&#x7A;}}}}}}}}</font>",
+    //  "shadow": {}
+    //},
     // Clan icon.
     // Иконка клана.
-    "clanIcon": {
-      "enabled": true,
-      "x": 65, "y": 6, "width": 16, "height": 16, "align": "center", "alpha": 90, "bindToIcon": true,
-      "src": "{{clanicon}}"
-      //"format": "<img src='{{clanicon}}' width='16' height='16'>"
-    },
+    //"clanIcon": {
+    //  "enabled": true,
+    //  "x": 65, "y": 6, "width": 16, "height": 16, "align": "center", "alpha": 90, "bindToIcon": true,
+    //  "src": "{{clanicon}}"
+    //  //"format": "<img src='{{clanicon}}' width='16' height='16'>"
+    //},
     // XVM user marker.
     // Маркер пользователя XVM.
-    "xvmUserMarker": {
-      "enabled": false,
-      "x": 10, "y": 5, "bindToIcon": true,
-      "src": "xvm://res/icons/xvm/xvm-user-{{xvm-user|none}}.png"
-    },
+    //"xvmUserMarker": {
+    //  "enabled": false,
+    //  "x": 10, "y": 5, "bindToIcon": true,
+    //  "src": "xvm://res/icons/xvm/xvm-user-{{xvm-user|none}}.png"
+    //},
     // HP bar background.
     // Подложка индикатора HP.
-    "hpBarBg": { "hotKeyCode": 56, "onHold": "true", "visibleOnHotKey": true, "x": 96, "y": 6, "width": 72, "bindToIcon": true, "height": 14, "bgColor": "0x000000", "alpha": "{{alive?35|0}}" },
+    "hpBarBg": { "x": 0, "y": 23, "width": "{{hp-max:{{pp.widthLeft}}}}", "height": 1, "bindToIcon": false, "alpha": 50, "bgColor": "0xFFFFFF" },
     // HP bar.
     // Индикатор HP.
-    "hpBar": { "hotKeyCode": 56, "onHold": "true", "visibleOnHotKey": true, "x": 97, "y": 7, "bindToIcon": true, "width": "{{hp-ratio:70}}", "height": 12, "bgColor": "{{player?#FFDD33|{{c:system}}}}", "alpha": "{{alive?50|0}}" },
+    "hpBar":   { "x": 0, "y": 22, "width": "{{hp:{{pp.widthLeft}}}}", "height": 2, "bindToIcon": false, "alpha": 100, "bgColor": "{{ally?0x00A000|0xA00000}}" },
     // Remaining HP.
     // Оставшиеся HP.
     "hp": {
-      "hotKeyCode": 56, "onHold": "true", "visibleOnHotKey": true, "bindToIcon": true, "alpha": "{{alive?100|0}}",
-      "x": 96, "width": 72, "y": 4,
-      "textFormat": { "font": "$FieldFont", "size": 11, "color": "0xD9D9D9", "bold": "true", "align": "center" },
-      "format": "<font alpha='{{alive?{{ready?#FF|#80}}|#80}}'>{{alive?{{hp|{{l10n:No data}}}}|{{l10n:Destroyed}}}}</font>",
-      "shadow": { "enabled": true, "color": "0x000000", "alpha": 100, "blur": 4, "strength": 1, "distance": 0, "angle": 0 }
+      "hotKeyCode": 56, "onHold": "true", "visibleOnHotKey": true,
+      "x": 48, "y": 6, "bindToIcon": true, "alpha": "{{alive?100|40}}",
+      "textFormat": { "font": "$FieldFont", "size": 16, "bold": "true" },
+      "format": "<font color='{{c:hp-ratio}}'>{{hp|?}}</font> / {{hp-max|?}}",
+      "shadow": {
+        "alpha": 100, "color": "0x000000", "angle": 45, "distance": 0, "size": 5, "strength": 8
+      }
     }
   },
   // Parameters of the Players Panels ("ears").
@@ -81,7 +83,7 @@
     "enabled": true,
     // Opacity percentage of the panels. 0 - transparent, 100 - opaque.
     // Прозрачность в процентах ушей. 0 - прозрачные, 100 - не прозрачные.
-    "alpha": 80,
+    "alpha": 75,
     // Opacity percentage of icons in the panels. 0 - transparent ... 100 - opaque.
     // Прозрачность в процентах иконок в ушах. 0 - прозрачные, 100 - не прозрачные.
     "iconAlpha": 100,
@@ -93,7 +95,7 @@
     "removePanelsModeSwitcher": false,
     // Start panels mode. Possible values: "none", "short", "medium", "medium2", "large".
     // Начальный режим ушей. Возможные значения: "none", "short", "medium", "medium2", "large".
-    "startMode": "large",
+    "startMode": "medium2",
     // Alternative panels mode. Possible values: null, "none", "short", "medium", "medium2", "large".
     // Альтернативный режим ушей. Возможные значения: null, "none", "short", "medium", "medium2", "large".
     "altMode": null,
@@ -247,10 +249,7 @@
       "extraFieldsLeft": [
         ${"def.hpBarBg"},
         ${"def.hpBar"},
-        ${"def.hp"},
-        ${"def.clanIcon"},
-        ${"def.xvmUserMarker"},
-        ${"def.xmqpServiceMarker"}
+        ${"def.hp"}
       ],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
@@ -258,8 +257,6 @@
         ${"def.hpBarBg"},
         ${"def.hpBar"},
         ${"def.hp"},
-        ${"def.clanIcon"},
-        ${"def.xvmUserMarker"},
         ${"def.enemySpottedMarker"}
       ]
     },
@@ -351,10 +348,7 @@
       "extraFieldsLeft": [
         ${"def.hpBarBg"},
         ${"def.hpBar"},
-        ${"def.hp"},
-        ${"def.clanIcon"},
-        ${"def.xvmUserMarker"},
-        ${"def.xmqpServiceMarker"}
+        ${"def.hp"}
       ],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
@@ -362,8 +356,6 @@
         ${"def.hpBarBg"},
         ${"def.hpBar"},
         ${"def.hp"},
-        ${"def.clanIcon"},
-        ${"def.xvmUserMarker"},
         ${"def.enemySpottedMarker"}
       ]
     },
@@ -380,7 +372,7 @@
       // Width of area for switching to "large" mode on mouse over
       // Ширина области переключения в режим "large" при наведении мыши
       "expandAreaWidth": 230,
-      // true - disable platoon icons
+        // true - disable platoon icons
       // true - убрать отображение иконок взвода
       "removeSquadIcon": false,
       // transparency of the squad icon
@@ -455,10 +447,7 @@
       "extraFieldsLeft": [
         ${"def.hpBarBg"},
         ${"def.hpBar"},
-        ${"def.hp"},
-        ${"def.clanIcon"},
-        ${"def.xvmUserMarker"},
-        ${"def.xmqpServiceMarker"}
+        ${"def.hp"}
       ],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
@@ -466,8 +455,6 @@
         ${"def.hpBarBg"},
         ${"def.hpBar"},
         ${"def.hp"},
-        ${"def.clanIcon"},
-        ${"def.xvmUserMarker"},
         ${"def.enemySpottedMarker"}
       ]
     },
@@ -556,10 +543,7 @@
       "extraFieldsLeft": [
         ${"def.hpBarBg"},
         ${"def.hpBar"},
-        ${"def.hp"},
-        ${"def.clanIcon"},
-        ${"def.xvmUserMarker"},
-        ${"def.xmqpServiceMarker"}
+        ${"def.hp"}
       ],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
@@ -567,8 +551,6 @@
         ${"def.hpBarBg"},
         ${"def.hpBar"},
         ${"def.hp"},
-        ${"def.clanIcon"},
-        ${"def.xvmUserMarker"},
         ${"def.enemySpottedMarker"}
       ]
     }
