@@ -35,11 +35,15 @@ Function Main
             $ConfigVersion = $(Get-Content -Path $MainConfig.FullName -Encoding UTF8 | Select-String '"date"') -replace '^.*"date": "[\d/]+ Version\.([\d\.]+)".*$','$1'
 
             # rename target
-            $NewName = $OutName + ' v' + $ConfigVersion + ' for XVM ' + $ModMinVersion
+            $NewTitle = $OutName + ' v' + $ConfigVersion + ' for XVM ' + $ModMinVersion
+            $NewName  = $NewTitle -replace ' ','_'
             Rename-Item -NewName $NewName -Path $(Join-Path $(Get-Location) $Target)
 
             # compress to zip
             Compress-Archive -Path $NewName -DestinationPath $($NewName + '.zip') -Force
+
+            # out result
+            $NewTitle | clip
         }
         catch
         {
