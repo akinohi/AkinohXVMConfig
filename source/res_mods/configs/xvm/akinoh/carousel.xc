@@ -36,7 +36,7 @@
     "showTotalSlots": false,
     // true - show used slots count in the "Buy slot" cell.
     // true - показывать количество занятых слотов в ячейке "Купить слот".
-    "showUsedSlots": true,
+    "showUsedSlots": false,
     // Visibility filters.
     // Видимость фильтров.
     "filters": {

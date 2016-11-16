@@ -6,7 +6,7 @@
   "squad": {
     // false - Disable display info.
     // false - выключить отображение информации.
-    "enabled": true,
+    "enabled": false,
     // false - hide player clan.
     // false - скрыть клан игрока.
     "showClan": true,

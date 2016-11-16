@@ -29,14 +29,14 @@
     // Text for {{spotted}} macro.
     // Текст для макроса {{spotted}}
     "spotted": {
-      "neverSeen": "",
-      "lost": "<font face='xvm' size='24'>&#x70;</font>",
-      "spotted": "<font face='xvm' size='24'>&#x70;</font>",
-      "dead": "",
-      "neverSeen_arty": "",
-      "lost_arty": "<font face='xvm' size='24'>&#x70;</font>",
-      "spotted_arty": "<font face='xvm' size='24'>&#x70;</font>",
-      "dead_arty": ""
+      "neverSeen":      "<img src='xvm://res/akinoh/neverSeen.png' width='24' height='24'>",
+      "lost":           "<img src='xvm://res/akinoh/lost.png' width='24' height='24'>",
+      "spotted":        "<img src='xvm://res/akinoh/spotted.png' width='24' height='24'>",
+      "dead":           "",
+      "neverSeen_arty": "<img src='xvm://res/akinoh/neverSeen.png' width='24' height='24'>",
+      "lost_arty":      "<img src='xvm://res/akinoh/lost.png' width='24' height='24'>",
+      "spotted_arty":   "<img src='xvm://res/akinoh/spotted.png' width='24' height='24'>",
+      "dead_arty":      ""
     },
     // Text for {{xvm-user}} macro.
     // Текст для макроса {{xvm-user}}

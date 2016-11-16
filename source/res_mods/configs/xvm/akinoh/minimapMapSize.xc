@@ -12,7 +12,7 @@
     "alpha": 70,
     "textFormat": {
       "font": "Times New Roman",
-      "size": 10,
+      "size": 6,
       "color": "0xFFCC66",
       "align": "left",
       "bold": true,

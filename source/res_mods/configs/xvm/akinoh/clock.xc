@@ -6,7 +6,7 @@
   "clock": {
     // Show clock in hangar.
     // Показывать часы в ангаре.
-    "enabled": true,
+    "enabled": false,
     // Horizontal position.
     // Положение по горизонтали.
     "x": -10,
@@ -85,6 +85,6 @@
       "alpha": 70,               // (0 .. 100)      / opacity         / прозрачность
       "blur": 4,                 // (0.0 .. 255.0)  / blur            / размытие
       "strength": 2              // (0.0 .. 255.0)  / intensity       / интенсивность
-    }   
+    }
   }
 }

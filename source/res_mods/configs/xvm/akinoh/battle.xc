@@ -22,7 +22,7 @@
     "clanIconsFolder": "clanicons/",
     // Path to sixth sense icon ("" for original icon).
     // Путь к иконке 6-го чувства ("" для оригинальной иконки).
-    "sixthSenseIcon": "xvm://res/SixthSense.png",
+    "sixthSenseIcon": "",
     // Duration of the sixth sense indicator (msec).
     // Длительность отображения индикатора 6-го чувства (мсек).
     "sixthSenseDuration": 2000,
