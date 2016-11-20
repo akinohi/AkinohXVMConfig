@@ -19,7 +19,7 @@
       ${ "battleLabelsTemplates.xc":"def.mainGun" },
       ${ "battleLabelsTemplates.xc":"def.damageLog" },
       ${ "battleLabelsTemplates.xc":"def.timerReload" },
-      ${ "battleLabelsTemplates.xc":"def.lastHit" },
+      //${ "battleLabelsTemplates.xc":"def.lastHit" },
       ${ "battleLabelsTemplates.xc":"def.fire" }
     ]
   }
