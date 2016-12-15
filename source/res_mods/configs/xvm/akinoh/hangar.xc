@@ -63,8 +63,8 @@
       "updateInterval": 10000,
       // Axis field coordinates
       // Положение поля по осям
-      "x": 3,
-      "y": 51,
+      "x": 85,
+      "y": 52,
       // Horizontal alignment of field at screen ("left", "center", "right").
       // Горизонтальное выравнивание поля на экране ("left", "center", "right").
       "hAlign": "left",
@@ -280,6 +280,15 @@
     // Show "Premium shop" button
     // Показать кнопку "Премиум магазин"
     "showPremiumShopButton": true,
+    // Behavior of the system channel notifications button on new notifications:
+    //   none - do nothing
+    //   blink - blink button
+    //   full - blink and show counter (default client behavior)
+    // Поведение кнопки оповещений системного канала при новых оповещениях:
+    //   none - ничего не делать
+    //   blink - мигать кнопкой
+    //   full - мигать и показать счетчик (поведение клиента по-умолчанию)
+    "notificationsButtonType": "full",
     // Parameters for tank carousel
     // Параметры карусели танков
     "carousel": ${"carousel.xc":"carousel"},
