@@ -54,19 +54,19 @@
 
     // Address to config updates.
     // Адрес, где выкладываются обновления конфига.
-    "url": "none",
+    "url": "https://github.com/akinohi/XVMConfig/",
 
     // Config last modified.
     // Дата последней модификации конфига.
-    "date": "2016/11/17 Version.1.21",
+    "date": "2016/12/15 Version 1.22",
 
     // Supported version of the game.
     // Поддерживаемая версия игры.
-    "gameVersion": "0.9.16",
+    "gameVersion": "0.9.17",
 
     // The minimum required version of the XVM mod.
     // Минимально необходимая версия мода XVM.
-    "modMinVersion": "6.4.8"
+    "modMinVersion": "6.5.0"
   },
 
   // Parameters for login screen.
