@@ -255,8 +255,7 @@
       "extraFieldsLeft": [
         ${"def.hpBarBg"},
         ${"def.hpBar"},
-        ${"def.hp"},
-        ${"def.topTankers"}
+        ${"def.hp"}
       ],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
@@ -264,8 +263,7 @@
         ${"def.hpBarBg"},
         ${"def.hpBar"},
         ${"def.hp"},
-        ${"def.enemySpottedMarker"},
-        ${"def.topTankers"}
+        ${"def.enemySpottedMarker"}
       ]
     },
     // Options for the "medium" panels - the first of the medium panels.
@@ -356,8 +354,7 @@
       "extraFieldsLeft": [
         ${"def.hpBarBg"},
         ${"def.hpBar"},
-        ${"def.hp"},
-        ${"def.topTankers"}
+        ${"def.hp"}
       ],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
@@ -365,8 +362,7 @@
         ${"def.hpBarBg"},
         ${"def.hpBar"},
         ${"def.hp"},
-        ${"def.enemySpottedMarker"},
-        ${"def.topTankers"}
+        ${"def.enemySpottedMarker"}
       ]
     },
     // Options for the "medium2" panels - the second of the medium panels.
@@ -457,8 +453,7 @@
       "extraFieldsLeft": [
         ${"def.hpBarBg"},
         ${"def.hpBar"},
-        ${"def.hp"},
-        ${"def.topTankers"}
+        ${"def.hp"}
       ],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
@@ -466,8 +461,7 @@
         ${"def.hpBarBg"},
         ${"def.hpBar"},
         ${"def.hp"},
-        ${"def.enemySpottedMarker"},
-        ${"def.topTankers"}
+        ${"def.enemySpottedMarker"}
       ]
     },
     // Options for the "large" panels - the widest panels.
@@ -555,8 +549,7 @@
       "extraFieldsLeft": [
         ${"def.hpBarBg"},
         ${"def.hpBar"},
-        ${"def.hp"},
-        ${"def.topTankers"}
+        ${"def.hp"}
       ],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
@@ -564,8 +557,7 @@
         ${"def.hpBarBg"},
         ${"def.hpBar"},
         ${"def.hp"},
-        ${"def.enemySpottedMarker"},
-        ${"def.topTankers"}
+        ${"def.enemySpottedMarker"}
       ]
     }
   }
