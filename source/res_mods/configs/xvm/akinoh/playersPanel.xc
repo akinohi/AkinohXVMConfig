@@ -31,38 +31,23 @@
       // настройки тени (см. ниже).
       "shadow": {}
     },
-    // XMQP service marker definition.
-    // Шаблон маркера сервиса XMQP.
-    //"xmqpServiceMarker": {
-    //  "x": -80, "y": -8, "align": "center", "bindToIcon": true,
-    //  "textFormat": {
-    //    "font": "xvm",
-    //    "size": 23
-    //  },
-    //  "format": "<font color='{{alive?{{x-spotted?#FFBB00|{{x-sense-on?#D9D9D9|#BFBFBF}}}}|#FFFFFF}}' alpha='{{alive?#FF|#80}}'>{{alive?{{x-spotted?&#x70;|{{x-sense-on?&#x70;|{{x-enabled?&#x7A;}}}}}}}}</font>",
-    //  "shadow": {}
-    //},
     // "Top tankers" rank definition.
     // Шаблон позиции в "Танковых асах".
     "topTankers": {
-      "x": 77, "y": 6, "width": 16, "height": 16, "align": "center", "bindToIcon": true,
+      "hotKeyCode": 56, "onHold": "true", "visibleOnHotKey": true,
+      "x": 127, "y": 6, "width": 14, "height": 14, "align": "center", "bindToIcon": true,
       "src": "{{top_tankers_emblem}}"
     },
-    // Clan icon.
-    // Иконка клана.
-    //"clanIcon": {
-    //  "enabled": true,
-    //  "x": 65, "y": 6, "width": 16, "height": 16, "align": "center", "alpha": 90, "bindToIcon": true,
-    //  "src": "{{clanicon}}"
-    //  //"format": "<img src='{{clanicon}}' width='16' height='16'>"
-    //},
-    // XVM user marker.
-    // Маркер пользователя XVM.
-    //"xvmUserMarker": {
-    //  "enabled": false,
-    //  "x": 10, "y": 5, "bindToIcon": true,
-    //  "src": "xvm://res/icons/xvm/xvm-user-{{xvm-user|none}}.png"
-    //},
+    // Marks on Gun definition.
+    "marksOnGun": {
+      "hotKeyCode": 56, "onHold": "true", "visibleOnHotKey": true,
+      "x": 147, "y": 5, "width": 24, "height": 24, "align": "center", "bindToIcon": true,
+      "textFormat": { "font": "$FieldFont", "size": 12, "bold": "true" },
+      "alpha": "{{marksOnGun>0?100|0}}", "format": "{{marksOnGun}}",
+      "shadow": {
+        "alpha": 100, "color": "0x000000", "angle": 45, "distance": 0, "size": 5, "strength": 1
+      }
+    },
     // HP bar background.
     // Подложка индикатора HP.
     "hpBarBg": { "x": 0, "y": 23, "width": "{{hp-max:{{pp.widthLeft}}}}", "height": 1, "bindToIcon": false, "alpha": 50, "bgColor": "0xFFFFFF" },
@@ -73,7 +58,7 @@
     // Оставшиеся HP.
     "hp": {
       "hotKeyCode": 56, "onHold": "true", "visibleOnHotKey": true,
-      "x": 48, "y": 6, "bindToIcon": true, "alpha": "{{alive?100|40}}",
+      "x": 48, "y": 2, "bindToIcon": true, "alpha": "{{alive?100|40}}",
       "textFormat": { "font": "$FieldFont", "size": 16, "bold": "true" },
       "format": "<font color='{{c:hp-ratio}}'>{{hp|?}}</font> / {{hp-max|?}}",
       "shadow": {
@@ -255,7 +240,9 @@
       "extraFieldsLeft": [
         ${"def.hpBarBg"},
         ${"def.hpBar"},
-        ${"def.hp"}
+        ${"def.hp"},
+        ${"def.topTankers"},
+        ${"def.marksOnGun"}
       ],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
@@ -263,7 +250,9 @@
         ${"def.hpBarBg"},
         ${"def.hpBar"},
         ${"def.hp"},
-        ${"def.enemySpottedMarker"}
+        ${"def.enemySpottedMarker"},
+        ${"def.topTankers"},
+        ${"def.marksOnGun"}
       ]
     },
     // Options for the "medium" panels - the first of the medium panels.
@@ -354,7 +343,9 @@
       "extraFieldsLeft": [
         ${"def.hpBarBg"},
         ${"def.hpBar"},
-        ${"def.hp"}
+        ${"def.hp"},
+        ${"def.topTankers"},
+        ${"def.marksOnGun"}
       ],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
@@ -362,7 +353,9 @@
         ${"def.hpBarBg"},
         ${"def.hpBar"},
         ${"def.hp"},
-        ${"def.enemySpottedMarker"}
+        ${"def.enemySpottedMarker"},
+        ${"def.topTankers"},
+        ${"def.marksOnGun"}
       ]
     },
     // Options for the "medium2" panels - the second of the medium panels.
@@ -453,7 +446,9 @@
       "extraFieldsLeft": [
         ${"def.hpBarBg"},
         ${"def.hpBar"},
-        ${"def.hp"}
+        ${"def.hp"},
+        ${"def.topTankers"},
+        ${"def.marksOnGun"}
       ],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
@@ -461,7 +456,9 @@
         ${"def.hpBarBg"},
         ${"def.hpBar"},
         ${"def.hp"},
-        ${"def.enemySpottedMarker"}
+        ${"def.enemySpottedMarker"},
+        ${"def.topTankers"},
+        ${"def.marksOnGun"}
       ]
     },
     // Options for the "large" panels - the widest panels.
@@ -549,7 +546,9 @@
       "extraFieldsLeft": [
         ${"def.hpBarBg"},
         ${"def.hpBar"},
-        ${"def.hp"}
+        ${"def.hp"},
+        ${"def.topTankers"},
+        ${"def.marksOnGun"}
       ],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
@@ -557,7 +556,9 @@
         ${"def.hpBarBg"},
         ${"def.hpBar"},
         ${"def.hp"},
-        ${"def.enemySpottedMarker"}
+        ${"def.enemySpottedMarker"},
+        ${"def.topTankers"},
+        ${"def.marksOnGun"}
       ]
     }
   }
