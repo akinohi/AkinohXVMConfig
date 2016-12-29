@@ -34,7 +34,7 @@
     // Индикатор общего HP команд.
     "totalHP": {
       "enabled": true,
-      "updateEvent": "ON_PLAYERS_HP_CHANGED",
+      "updateEvent": "PY(ON_UPDATE_HP)",
       "x": 0,
       "y": 30,
       "screenHAlign": "center",
@@ -47,7 +47,7 @@
     // Средний урон на текущей технике.
     "avgDamage": {
       "enabled": true,
-      "updateEvent": "ON_DAMAGE_CAUSED",
+      "updateEvent": "PY(ON_UPDATE_HP)",
       "x": -170,
       "y": 30,
       "screenHAlign": "center",
@@ -60,7 +60,7 @@
     // Порог необходимый для получения достижения "Основной калибр".
     "mainGun": {
       "enabled": true,
-      "updateEvent": "ON_DAMAGE_CAUSED, ON_DAMAGE_CAUSED_ALLY",
+      "updateEvent": "PY(ON_UPDATE_HP)",
       "x": 170,
       "y": 30,
       "screenHAlign": "center",
@@ -111,35 +111,35 @@
     },
     // Display the last damage (hit) (see damageLog.xc).
     // Отображение последнего урона (попадания) (см. damageLog.xc).
-    //"lastHit": {
-    //  "enabled": true,
-    //  "updateEvent": "PY(ON_LAST_HIT)",
-    //  "x": "{{py:xvm.damageLog.lastHit_x}}",
-    //  "y": "{{py:xvm.damageLog.lastHit_y}}",
-    //  "width": 200,
-    //  "height": 100,
-    //  "screenHAlign": "center",
-    //  "screenVAlign": "center",
-    //  "shadow": { 
-    //    "distance": "{{py:xvm.damageLog.lastHit_shadow('distance')}}",
-    //    "angle": "{{py:xvm.damageLog.lastHit_shadow('angle')}}",
-    //    "color": "{{py:xvm.damageLog.lastHit_shadow('color')}}",
-    //    "alpha": "{{py:xvm.damageLog.lastHit_shadow('alpha')}}",
-    //    "blur": "{{py:xvm.damageLog.lastHit_shadow('blur')}}",
-    //    "strength": "{{py:xvm.damageLog.lastHit_shadow('strength')}}",
-    //    "hideObject": "{{py:xvm.damageLog.lastHit_shadow('hideObject')}}",
-    //    "inner": "{{py:xvm.damageLog.lastHit_shadow('inner')}}",
-    //    "knockout": "{{py:xvm.damageLog.lastHit_shadow('knockout')}}",
-    //    "quality": "{{py:xvm.damageLog.lastHit_shadow('quality')}}" 
-    //  },
-    //  "textFormat": {"align": "center", "color": "0xF4EFE8", "size": 16 },
-    //  "format": "{{py:xvm.damageLog.lastHit}}",
-    //  "mouseEvents": {
-    //    "mouseDown": "lastHit_mouseDown",
-    //    "mouseUp": "lastHit_mouseUp",
-    //    "mouseMove": "lastHit_mouseMove"
-    //  }
-    //},
+    "lastHit": {
+      "enabled": true,
+      "updateEvent": "PY(ON_LAST_HIT)",
+      "x": "{{py:xvm.damageLog.lastHit_x}}",
+      "y": "{{py:xvm.damageLog.lastHit_y}}",
+      "width": 200,
+      "height": 100,
+      "screenHAlign": "center",
+      "screenVAlign": "center",
+      "shadow": { 
+        "distance": "{{py:xvm.damageLog.lastHit_shadow('distance')}}",
+        "angle": "{{py:xvm.damageLog.lastHit_shadow('angle')}}",
+        "color": "{{py:xvm.damageLog.lastHit_shadow('color')}}",
+        "alpha": "{{py:xvm.damageLog.lastHit_shadow('alpha')}}",
+        "blur": "{{py:xvm.damageLog.lastHit_shadow('blur')}}",
+        "strength": "{{py:xvm.damageLog.lastHit_shadow('strength')}}",
+        "hideObject": "{{py:xvm.damageLog.lastHit_shadow('hideObject')}}",
+        "inner": "{{py:xvm.damageLog.lastHit_shadow('inner')}}",
+        "knockout": "{{py:xvm.damageLog.lastHit_shadow('knockout')}}",
+        "quality": "{{py:xvm.damageLog.lastHit_shadow('quality')}}" 
+      },
+      "textFormat": {"align": "center", "color": "0xF4EFE8", "size": 16 },
+      "format": "{{py:xvm.damageLog.lastHit}}",
+      "mouseEvents": {
+        "mouseDown": "lastHit_mouseDown",
+        "mouseUp": "lastHit_mouseUp",
+        "mouseMove": "lastHit_mouseMove"
+      }
+    },
     "fire": {
       "enabled": false,
       "updateEvent": "PY(ON_FIRE)",
