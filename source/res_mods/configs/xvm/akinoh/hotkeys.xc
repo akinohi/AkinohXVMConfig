@@ -17,7 +17,7 @@
     "minimapAltMode":      { "enabled": true, "keyCode": 29, "onHold": true },
     // "Ears" (players panels) alternative mode.
     // Альтернативный режим "ушей" (панелей игроков).
-    "playersPanelAltMode": { "enabled": false, "keyCode": 56, "onHold": true },
+    "playersPanelAltMode": { "enabled": true, "keyCode": 60, "onHold": true },
     // Vehicle markers alternative mode.
     // Альтернативный режим маркеров над танками.
     "markersAltMode":      { "enabled": true, "onHold": true },

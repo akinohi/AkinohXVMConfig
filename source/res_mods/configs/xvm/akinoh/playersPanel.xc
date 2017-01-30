@@ -48,6 +48,8 @@
         "alpha": 100, "color": "0x000000", "angle": 45, "distance": 0, "size": 5, "strength": 1
       }
     },
+    // Marks for SPGs
+    "merksForSPGs": { "x": 0, "y": 0, "width": 3, "height": 23, "bindToIcon": false, "alpha": "{{vtype-key=SPG?100|0}}", "bgColor": "{{c:vtype}}" },
     // HP bar background.
     // Подложка индикатора HP.
     "hpBarBg": { "x": 0, "y": 23, "width": "{{hp-max:{{pp.widthLeft}}}}", "height": 1, "bindToIcon": false, "alpha": 50, "bgColor": "0xFFFFFF" },
@@ -89,7 +91,7 @@
     "startMode": "medium2",
     // Alternative panels mode. Possible values: null, "none", "short", "medium", "medium2", "large".
     // Альтернативный режим ушей. Возможные значения: null, "none", "short", "medium", "medium2", "large".
-    "altMode": null,
+    "altMode": "large",
     // Options for the "none" panels - empty panels.
     // Режим ушей "none" - пустые уши.
     "none": {
@@ -238,6 +240,7 @@
       // Set of formats for left panel (extended format supported, see above)
       // Набор форматов для левой панели (поддерживается расширенный формат, см. выше)
       "extraFieldsLeft": [
+        ${"def.merksForSPGs"},
         ${"def.hpBarBg"},
         ${"def.hpBar"},
         ${"def.hp"},
@@ -247,6 +250,7 @@
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
       "extraFieldsRight": [
+        ${"def.merksForSPGs"},
         ${"def.hpBarBg"},
         ${"def.hpBar"},
         ${"def.hp"},
@@ -341,6 +345,7 @@
       // Set of formats for left panel (extended format supported, see above)
       // Набор форматов для левой панели (поддерживается расширенный формат, см. выше)
       "extraFieldsLeft": [
+        ${"def.merksForSPGs"},
         ${"def.hpBarBg"},
         ${"def.hpBar"},
         ${"def.hp"},
@@ -350,6 +355,7 @@
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
       "extraFieldsRight": [
+        ${"def.merksForSPGs"},
         ${"def.hpBarBg"},
         ${"def.hpBar"},
         ${"def.hp"},
@@ -444,6 +450,7 @@
       // Set of formats for left panel (extended format supported, see above)
       // Набор форматов для левой панели (поддерживается расширенный формат, см. выше)
       "extraFieldsLeft": [
+        ${"def.merksForSPGs"},
         ${"def.hpBarBg"},
         ${"def.hpBar"},
         ${"def.hp"},
@@ -453,6 +460,7 @@
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
       "extraFieldsRight": [
+        ${"def.merksForSPGs"},
         ${"def.hpBarBg"},
         ${"def.hpBar"},
         ${"def.hp"},
@@ -516,7 +524,7 @@
       // Display format for player nickname (macros allowed, see macros.txt).
       // Формат отображения имени игрока (допускаются макроподстановки, см. macros.txt).
       "nickFormatLeft": "<font face='mono' size='{{xvm-stat?13|0}}' color='{{c:r}}' alpha='{{alive?#FF|#80}}'>{{r|--}}</font> {{name%.15s~..}}<font alpha='#A0'>{{clan}}</font>",
-      "nickFormatRight": "<font alpha='#A0'>{{clan}}</font>{{name%.15s~..}} <font face='mono' size='{{xvm-stat?13|0}}' color='{{c:r}}' alpha='{{alive?#FF|#80}}'>{{r}}</font>",
+      "nickFormatRight": "<font alpha='#A0'>{{clan}}</font>{{name%.12s~..}} <font face='mono' size='{{xvm-stat?13|0}}' color='{{c:r}}' alpha='{{alive?#FF|#80}}'>{{r}}</font>",
       // Shadow for player name field (default null = no shadow, as in vanillas client).
       // Тень для поля имени игрока (по умолчанию null = без тени, как в чистом клиенте).
       "nickShadowLeft": null,
@@ -544,6 +552,7 @@
       // Set of formats for left panel (extended format supported, see above)
       // Набор форматов для левой панели (поддерживается расширенный формат, см. выше)
       "extraFieldsLeft": [
+        ${"def.merksForSPGs"},
         ${"def.hpBarBg"},
         ${"def.hpBar"},
         ${"def.hp"},
@@ -553,6 +562,7 @@
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
       "extraFieldsRight": [
+        ${"def.merksForSPGs"},
         ${"def.hpBarBg"},
         ${"def.hpBar"},
         ${"def.hp"},
