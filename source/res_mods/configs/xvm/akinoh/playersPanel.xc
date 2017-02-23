@@ -203,7 +203,7 @@
       "nickXOffsetRight": 0,
       // Minimum width of the player name column. Default is 46.
       // Минимальная ширина поля имени игрока. По умолчанию: 46.
-      "nickMinWidth": 46,
+      "nickMinWidth": 158,
       // Maximum width of the player name column. Default is 158.
       // Максимальная ширина поля имени игрока. По умолчанию: 158.
       "nickMaxWidth": 158,
@@ -310,7 +310,7 @@
       "nickXOffsetRight": 0,
       // Minimum width of the player name column. Default is 46.
       // Минимальная ширина поля имени игрока. По умолчанию: 46.
-      "nickMinWidth": 46,
+      "nickMinWidth": 158,
       // Maximum width of the player name column. Default is 158.
       // Максимальная ширина поля имени игрока. По умолчанию: 158.
       "nickMaxWidth": 158,
@@ -415,7 +415,7 @@
       "nickXOffsetRight": 0,
       // Minimum width of the player name column. Default is 46.
       // Минимальная ширина поля имени игрока. По умолчанию: 46.
-      "nickMinWidth": 46,
+      "nickMinWidth": 158,
       // Maximum width of the player name column. Default is 158.
       // Максимальная ширина поля имени игрока. По умолчанию: 158.
       "nickMaxWidth": 158,
@@ -517,7 +517,7 @@
       "nickXOffsetRight": 0,
       // Minimum width of the player name column. Default is 46.
       // Минимальная ширина поля имени игрока. По умолчанию: 46.
-      "nickMinWidth": 46,
+      "nickMinWidth": 158,
       // Maximum width of the player name column, Default is 158.
       // Максимальная ширина поля имени игрока. По умолчанию: 158.
       "nickMaxWidth": 158,
