@@ -57,8 +57,6 @@
       "regular": "",
       // Тренировочный бой
       "training": "training",
-      // Ротный бой
-      "company": "company",
       // Турнир
       "tournament": "tournament",
       // Клановый бой
@@ -92,7 +90,9 @@
       // Укрепрайон, вылазка (новый)
       "sortie_2": "sortie_2",
       // Битва за укрепрайон (новый)
-      "fort_battle_2": "fort_battle_2"
+      "fort_battle_2": "fort_battle_2",
+      // Ранговый бой
+      "ranked": ""
     },
     // Text for {{topclan}} macro.
     // Текст для макроса {{topclan}}

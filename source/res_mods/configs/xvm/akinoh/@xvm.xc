@@ -21,8 +21,8 @@
   // Версия конфига. Не удаляйте и не изменяйте её без необходимости.
   "configVersion": "6.1.0",
 
-  // automatically reload config. Can reduce performance.
-  // автоматически перезагружать конфиг. Может понизить производительность.
+  // Automatically reload config. Requires client restart.
+  // Автоматически перезагружать конфиг. Требует перезапуска клиента.
   "autoReloadConfig": false,
 
   // Language used in mod
@@ -58,15 +58,15 @@
 
     // Config last modified.
     // Дата последней модификации конфига.
-    "date": "2017/03/23 Version 1.29",
+    "date": "2017/09/12 Version 1.30a",
 
     // Supported version of the game.
     // Поддерживаемая версия игры.
-    "gameVersion": "0.9.17.1",
+    "gameVersion": "0.9.20.0",
 
     // The minimum required version of the XVM mod.
     // Минимально необходимая версия мода XVM.
-    "modMinVersion": "6.5.7"
+    "modMinVersion": "6.9.1"
   },
 
   // Parameters for login screen.
@@ -183,5 +183,9 @@
 
   // XMQP services settings
   // Настройки сервисов XMQP
-  "xmqp": ${"xmqp.xc":"xmqp"}
+  "xmqp": ${"xmqp.xc":"xmqp"},
+
+  // Various settings for advanced users
+  // Различные настройки для продвинутых пользоватей
+  "tweaks": ${"tweaks.xc":"tweaks"}
 }

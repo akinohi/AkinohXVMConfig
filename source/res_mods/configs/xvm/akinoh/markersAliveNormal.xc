@@ -231,17 +231,6 @@
         "strength": 2                 //   интенсивность
       },
       "format": "<font size='{{battletype?13|0}}'>{{position}}</font>"  //  формат текста. См. описание макросов в macros.txt
-    },
-    // "Top tankers" rank.
-    // Позиция в "Танковых асах".
-    "topTankers": {
-      "name": "topTankers",
-      "enabled": true,
-      "x": 33,
-      "y": -21,
-      "alpha": 100,
-      "align": "left",
-      "format": "<img src='{{top_tankers_emblem}}' width='16' height='16'>"
     }
   },
   // Настройки для союзников.
@@ -344,10 +333,17 @@
       "y": -67,          // Position on the Y axis / Положение по оси Y.
       "alpha": 100       // Opacity                / Прозрачность.
     },
+    // Stun marker
+    // Маркер оглушения
+    "stunMarker": {
+      "enabled": true,   // false - disable        / не отображать.
+      "x": 0,            // Position on the X axis / Положение по оси X.
+      "y": -67,          // Position on the Y axis / Положение по оси Y.
+      "alpha": 100       // Opacity                / Прозрачность.
+    },
     // Block of text fields (extended format supported, see extra-field.txt).
     // Блок текстовых полей (поддерживается расширенный формат, см. extra-field.txt).
     "textFields": [
-      ${ "def.topTankers" },
       ${ "def.tankName" },
       ${ "def.playerName" },
       ${ "def.tankHp" },
@@ -430,10 +426,17 @@
       "y": -67,
       "alpha": 100
     },
+    // Stun marker
+    // Маркер оглушения
+    "stunMarker": {
+      "enabled": true,
+      "x": 0,
+      "y": -67,
+      "alpha": 100
+    },
     // Block of text fields (extended format supported, see extra-field.txt).
     // Блок текстовых полей (поддерживается расширенный формат, см. extra-field.txt).
     "textFields": [
-      ${ "def.topTankers" },
       ${ "def.tankName" },
       ${ "def.tankHp" },
       ${ "def.rating" },

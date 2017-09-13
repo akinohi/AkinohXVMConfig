@@ -252,11 +252,6 @@
       { "value": 8730,  "color": ${"def.colorRating.good"      } },
       { "value": 99999, "color": ${"def.colorRating.very_good" } }
     ],
-    // Dynamic color for win chance
-    // Динамический цвет для шанса на победу
-    "winChance": [
-      { "value": 101, "color": ${"def.colorRating.normal" } }
-    ],
     // Dynamic color by win percent
     // Динамический цвет по проценту побед
     "winrate": [

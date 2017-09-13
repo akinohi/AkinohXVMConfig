@@ -7,6 +7,12 @@
     // false - disable camera settings.
     // false - отключить настройки камеры.
     "enabled": true,
+    // true - disable red flash when enemy hit your tank.
+    // true - отключить красную вспышку когда враг попадает по вам.
+    "noFlashBang": false,
+    // true - hide the tips about switching to siege mode and aiming mode changing in strategic mode.
+    // true - скрыть подсказки перехода в осадный режим и смены режима прицеливания в стратегическом режиме.
+    "hideHint": false,    
     // Arcade mode
     // Аркадный режим
     "arcade": {
@@ -21,7 +27,7 @@
       "scrollSensitivity": 5,
       // false - disable the shot recoil effect (for the enabled dynamic camera option)
       // false - выключить эффект отдачи от выстрела (для включенной опции динамической камеры)
-      "shotRecoilEffect": false
+      "shotRecoilEffect": true
     },
     // Postmortem mode
     // Режим после смерти
@@ -37,7 +43,7 @@
       "scrollSensitivity": 5,
       // false - disable the shot recoil effect (for the enabled dynamic camera option)
       // false - выключить эффект отдачи от выстрела (для включенной опции динамической камеры)
-      "shotRecoilEffect": false
+      "shotRecoilEffect": true
     },
     // Strategic mode (arty)
     // Стратегический режим (арта)
@@ -71,7 +77,7 @@
         // Field position relative to screen center
         // Положение поля относительно центра экрана
         "x": 150,
-        "y": -60,
+        "y": 30,
         // Field size
         // Размер поля
         "width": 100,
@@ -85,7 +91,7 @@
         // Background color
         // Цвет фона
         "bgColor": null,
-        // Border color 
+        // Border color
         // Цвет рамки
         "borderColor": null,
         "antiAliasType": "advanced",
@@ -115,7 +121,21 @@
       },
       // false - disable the shot recoil effect (for the enabled dynamic camera option)
       // false - выключить эффект отдачи от выстрела (для включенной опции динамической камеры)
-      "shotRecoilEffect": true
+      "shotRecoilEffect": true,
+      // true - disable dimming and greening in sniper scope
+      // true - отключить затемнение и озеленение в снайперском прицеле
+      "noBinoculars": false,
+      // TODO: English comments
+      // Отключение предела вращения камеры в снайперском прицеле для техники с ограниченными УГН (углами горизонтальной наводки) орудия. 
+      "noCameraLimit": {
+        // true - enable.
+        // true - включить.
+        "enabled": false,
+        // "full" - отключение ограничения камеры и фиксации корпуса (включается вручную клавишей "x");
+        // "custom" - отключение ограничения камеры;
+        // "hotkey" - отключение ограничения камеры с зажатой правой кнопкой мыши;
+        "mode": "hotkey"
+      }
     }
   }
 }
