@@ -32,7 +32,7 @@ Function Main
             # version info is read from '@xvm.xc'
             $MainConfig = $(Get-ChildItem -Recurse -File | ? Name -eq '@xvm.xc')
             $ModMinVersion = $(Get-Content -Path $MainConfig.FullName -Encoding UTF8 | Select-String '"modMinVersion"') -replace '^.*"modMinVersion": "([\d\.]+).*$','$1'
-            $ConfigVersion = $(Get-Content -Path $MainConfig.FullName -Encoding UTF8 | Select-String '"date"') -replace '^.*"date": "[\d/]+ Version ([\d\.]+)".*$','$1'
+            $ConfigVersion = $(Get-Content -Path $MainConfig.FullName -Encoding UTF8 | Select-String '"date"') -replace '^.*"date": "[\d/]+ Version (.+)".*$','$1'
 
             # rename target
             $NewTitle = $OutName + ' v' + $ConfigVersion + ' for XVM ' + $ModMinVersion
