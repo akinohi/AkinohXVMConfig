@@ -187,7 +187,7 @@
       // false - disable (отключить)
       "enabled": true,
       // Displayed standard fields in this mode and their order.
-      // Available names: "frags", "vehicle", "nick".
+      // Available names: "frags", "badge", "nick", "vehicle".
       // Отображаемые стандартные поля в данном режиме, и их порядок.
       // Допустимые названия: "frags", "badge", "nick", "vehicle".
       "standardFields": [ "frags" ],
@@ -301,7 +301,7 @@
       // false - disable (отключить)
       "enabled": true,
       // Displayed standard fields in this mode and their order.
-      // Available names: "frags", "vehicle", "nick".
+      // Available names: "frags", "badge", "nick", "vehicle".
       // Отображаемые стандартные поля в данном режиме, и их порядок.
       // Допустимые названия: "frags", "badge", "nick", "vehicle".
       "standardFields": [ "frags", "nick" ],
@@ -413,7 +413,7 @@
       // false - disable (отключить)
       "enabled": true,
       // Displayed standard fields in this mode and their order.
-      // Available names: "frags", "vehicle", "nick".
+      // Available names: "frags", "badge", "nick", "vehicle".
       // Отображаемые стандартные поля в данном режиме, и их порядок.
       // Допустимые названия: "frags", "badge", "nick", "vehicle".
       "standardFields": [ "frags", "vehicle" ],

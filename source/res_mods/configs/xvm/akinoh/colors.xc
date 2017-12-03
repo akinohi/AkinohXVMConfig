@@ -198,60 +198,45 @@
     // Dynamic color by remaining absolute health.
     // Динамический цвет по оставшемуся здоровью.
     "hp": [
-      { "value": 201,  "color": ${"def.colorHP.very_low"     } },      // Цвет для значений менее 201
-      { "value": 401,  "color": ${"def.colorHP.low"          } },      // Цвет для значений менее 401
-      { "value": 1001, "color": ${"def.colorHP.average"      } },      // Цвет для значений менее 1001
-      { "value": 9999, "color": ${"def.colorHP.above_average"} }       // Цвет для остальных значений
+      { "value": 200,  "color": ${"def.colorHP.very_low"     } }, // color for HP <= 200
+      { "value": 400,  "color": ${"def.colorHP.low"          } }, // color for HP <= 400
+      { "value": 1000, "color": ${"def.colorHP.average"      } }, // color for HP <= 1000
+      { "value": 9999, "color": ${"def.colorHP.above_average"} }  // color for HP > 1000
     ],
     // Dynamic color by remaining health percent.
     // Динамический цвет по проценту оставшегося здоровья.
     "hp_ratio": [
-      { "value": 10,  "color": ${"def.colorHP.very_low"     } },       // Цвет для значений менее 10 проц
-      { "value": 25,  "color": ${"def.colorHP.low"          } },       // Цвет для значений менее 25 проц
-      { "value": 50,  "color": ${"def.colorHP.average"      } },       // Цвет для значений менее 50 проц
-      { "value": 101, "color": ${"def.colorHP.above_average"} }        // Цвет для остальных значений
+      { "value": 10.4, "color": ${"def.colorHP.very_low"     } }, // color for HP <= 10%
+      { "value": 25.4, "color": ${"def.colorHP.low"          } }, // color for HP <= 25%
+      { "value": 50.4, "color": ${"def.colorHP.average"      } }, // color for HP <= 50%
+      { "value": 100,  "color": ${"def.colorHP.above_average"} }  // color for HP > 50%
     ],
     // Dynamic color for XVM Scale
     // Динамический цвет по шкале XVM
-    // http://www.koreanrandom.com/forum/topic/2625-/
+    // https://koreanrandom.com/forum/topic/2625-/
     "x": [
-      { "value": 16.5, "color": ${"def.colorRating.very_bad"  } },
-      { "value": 64,   "color": ${"def.colorRating.normal"    } },
-      { "value": 75.5, "color": ${"def.colorRating.good"      } },
+      { "value": 16.4, "color": ${"def.colorRating.very_bad"  } },
+      { "value": 33.4, "color": ${"def.colorRating.normal"    } },
+      { "value": 75.4, "color": ${"def.colorRating.good"      } },
       { "value": 999,  "color": ${"def.colorRating.very_good" } }
     ],
-    // Dynamic color by efficiency
-    // Динамический цвет по эффективности
-    "eff": [
-      { "value": 610,  "color": ${"def.colorRating.very_bad"  } },
-      { "value": 1357, "color": ${"def.colorRating.normal"    } },
-      { "value": 1540, "color": ${"def.colorRating.good"      } },
-      { "value": 9999, "color": ${"def.colorRating.very_good" } }
-    ],
-    // Dynamic color by WN6 rating
-    // Динамический цвет по рейтингу WN6
-    "wn6": [
-      { "value": 470,  "color": ${"def.colorRating.very_bad"  } },
-      { "value": 1430, "color": ${"def.colorRating.normal"    } },
-      { "value": 1635, "color": ${"def.colorRating.good"      } },
-      { "value": 9999, "color": ${"def.colorRating.very_good" } }
-    ],
-    // Dynamic color by WN8 rating
-    // Динамический цвет по рейтингу WN8
-    "wn8": [
-      { "value": 400,  "color": ${"def.colorRating.very_bad"  } },
-      { "value": 1825, "color": ${"def.colorRating.normal"    } },
-      { "value": 2180, "color": ${"def.colorRating.good"      } },
-      { "value": 9999, "color": ${"def.colorRating.very_good" } }
-    ],
-    // Dynamic color by WG rating
-    // Динамический цвет по рейтингу WG
-    "wgr": [
-      { "value": 2555,  "color": ${"def.colorRating.very_bad"  } },
-      { "value": 7622,  "color": ${"def.colorRating.normal"    } },
-      { "value": 8730,  "color": ${"def.colorRating.good"      } },
-      { "value": 99999, "color": ${"def.colorRating.very_good" } }
-    ],
+    // Текущие граничные значения для рейтингов указаны на данной странице: (TODO) https://nightly.modxvm.com/xvmscales/
+    // Current scales values ​​for ratings are listed on this page: (TODO) https://nightly.modxvm.com/xvmscales/
+    //
+    // Custom dynamic colors by ratings.
+    // If you want use your own color scales,
+    // uncomment this block and replace "rating_name" to one of this values: "eff", "wn8", "wtr", "wgr"
+    // Динамический цвет по указанному рейтингу.
+    // Если вы хотите использовать свои собственные границы цветов вместо стандартных, 
+    // раскомментируйте блок и замените "rating_name" на одно из следующих значений: "eff", "wn8", "wtr", "wgr"
+    // "rating_name": [
+    //  { "value": 500,   "color": ${"def.colorRating.very_bad" } }, //    0 - 500   - very bad
+    //  { "value": 1000,  "color": ${"def.colorRating.bad"      } }, //  501 - 1000  - bad
+    //  { "value": 2000,  "color": ${"def.colorRating.normal"   } }, // 1001 - 2000  - normal
+    //  { "value": 3000,  "color": ${"def.colorRating.good"     } }, // 2001 - 3000  - good
+    //  { "value": 5000,  "color": ${"def.colorRating.very_good"} }, // 3001 - 5000  - very good
+    //  { "value": 99999, "color": ${"def.colorRating.unique"   } }  // 5001 - 99999 - uniquе
+    // ],
     // Dynamic color by win percent
     // Динамический цвет по проценту побед
     "winrate": [

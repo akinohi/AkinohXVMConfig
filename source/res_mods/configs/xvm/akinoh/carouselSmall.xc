@@ -68,7 +68,7 @@
       // Favorite vehicle mark
       // Маркер основной техники
       "favorite": { "enabled": true, "dx": 0, "dy": 0, "alpha": 100 },
-      // Stats field shown on the mouse over
+      // Stats field that appears on the mouse hover
       // Поле статистики, отображаемое при наведении мыши
       "stats": { "enabled": true, "dx": 0, "dy": 0, "alpha": 100, "textFormat": {}, "shadow": {} }
     },
@@ -98,7 +98,7 @@
       {
         "enabled": true,
         "x": 24, "y": 16,
-        "format": "<b><font face='$FieldFont' size='12' color='#CFCFCF'>{{v.winrate%2d~%}}</font></b>",
+        "format": "<b><font face='$FieldFont' size='12' color='#C8C8B5'>{{v.winrate%2d~%}}</font></b>",
         "shadow": ${ "def.textFieldShadow" }
       }
     ]
