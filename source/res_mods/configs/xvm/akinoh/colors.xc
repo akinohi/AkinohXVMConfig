@@ -215,10 +215,10 @@
     // Динамический цвет по шкале XVM
     // https://koreanrandom.com/forum/topic/2625-/
     "x": [
-      { "value": 16.4, "color": ${"def.colorRating.very_bad"  } },
-      { "value": 33.4, "color": ${"def.colorRating.normal"    } },
-      { "value": 75.4, "color": ${"def.colorRating.good"      } },
-      { "value": 999,  "color": ${"def.colorRating.very_good" } }
+      { "value": 16.4, "color": ${"def.colorRating.very_bad" } },
+      { "value": 75.4, "color": ${"def.colorRating.normal"   } },
+      { "value": 92.4, "color": ${"def.colorRating.good"     } },
+      { "value": 999,  "color": ${"def.colorRating.very_good"} }
     ],
     // Текущие граничные значения для рейтингов указаны на данной странице: (TODO) https://nightly.modxvm.com/xvmscales/
     // Current scales values ​​for ratings are listed on this page: (TODO) https://nightly.modxvm.com/xvmscales/
