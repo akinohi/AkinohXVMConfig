@@ -91,15 +91,16 @@
         "knockout": "{{py:xvm.damageLog.dLog_shadow('knockout')}}",
         "quality": "{{py:xvm.damageLog.dLog_shadow('quality')}}" 
       },
-      "textFormat": { "color": "0xF4EFE8", "size": 16},
+      "textFormat": { "color": "0xF4EFE8", "size": 16 },
       "format": "{{py:xvm.damageLog.dLog}}",
       "mouseEvents": {
         "mouseDown": "dLog_mouseDown",
         "mouseUp": "dLog_mouseUp",
-        "mouseMove": "dLog_mouseMove"
+        "mouseMove": "dLog_mouseMove",
+        "mouseWheel": "dLog_mouseWheel"
       }
     },
-    //TODO (see damageLog.xc).
+    // TODO (see damageLog.xc).
     // Подложка лога полученного урона (см. damageLog.xc).    
     "damageLogBackground": {
       "enabled": false,

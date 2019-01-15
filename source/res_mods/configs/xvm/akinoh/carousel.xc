@@ -4,8 +4,8 @@
  */
 {
   "carousel": {
-    // false - Disable customizable carousel.
-    // false - Отключить настраиваемую карусель.
+    // false - disable customizable carousel.
+    // false - отключить настраиваемую карусель.
     "enabled": true,
     // Type of cells - "default" (depends from window size), "normal" or "small"
     // Вид ячеек - "default" (в зависимости от размера окна), "normal" (обычные), "small" (маленькие)
@@ -22,6 +22,15 @@
     // Background transparency (default - 100)
     // Прозрачность подложки (по умолчанию - 100)
     "backgroundAlpha": 100,
+    // Slot transparency (default - 100)
+    // Прозрачность слота (по умолчанию - 100)
+    "slotBackgroundAlpha": 100,
+    // Slot border transparency (default - 100)
+    // Прозрачность рамки слота (по умолчанию - 100)
+    "slotBorderAlpha": 100,
+    // Transparency of gradient frames at the carousel edges (default - 100)
+    // Прозрачность градиентных рамок  по краям карусели (по умолчанию - 100)
+    "edgeFadeAlpha": 100,
     // Mouse wheel scrolling speed multiplier (default - 1)
     // Множитель скорости прокрутки колесом мыши (по умолчанию - 1)
     "scrollingSpeed": 1,
@@ -31,6 +40,9 @@
     // true - hide cell "Buy slot".
     // true - скрыть ячейку "Купить слот".
     "hideBuySlot": false,
+    // true - hide cell "Restore Tank".
+    // true - скрыть ячейку "Восстановить машину".
+    "hideRestoreTank": false,
     // true - show total slots count in the "Buy vehicle" cell.
     // true - показывать общее количество слотов в ячейке "Купить машину".
     "showTotalSlots": false,
@@ -57,7 +69,7 @@
     },
     // Order of nations.
     // Порядок наций.
-    //"nations_order": ["ussr", "germany", "usa", "china", "france", "uk", "japan", "czech", "poland", "sweden"],
+    //"nations_order": ["ussr", "germany", "usa", "china", "france", "uk", "japan", "czech", "poland", "sweden", "italy"],
     "nations_order": [],
     // Order of types of vehicles.
     // Порядок классов техники.

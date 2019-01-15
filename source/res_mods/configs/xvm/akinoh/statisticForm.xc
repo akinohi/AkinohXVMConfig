@@ -13,7 +13,7 @@
     }
   },
   "statisticForm": {
-    // true - Disable Platoon/rank icons.
+    // true - disable Platoon/rank icons.
     // true - убрать отображение иконки взвода/ранга.
     "removeSquadIcon": false,
     // true - disable rank badge icons
@@ -41,16 +41,16 @@
     // Показывать рамку для поля фрагов (полезно для настройки конфига)
     "fragsFieldShowBorder": false,
     // X offset for allies squad icons
-    // Cмещение по оси X значка взвода союзников
+    // Смещение по оси X значка взвода союзников
     "squadIconOffsetXLeft": 0,
     // X offset for enemies squad icons
-    // Cмещение по оси X значка взвода противников
+    // Смещение по оси X значка взвода противников
     "squadIconOffsetXRight": 0,
     // X offset for allies player names field
-    // Cмещение по оси X поля ника союзников
+    // Смещение по оси X поля ника союзников
     "nameFieldOffsetXLeft": -11,
     // X offset for enemies player names field
-    // Cмещение по оси X поля ника противников
+    // Смещение по оси X поля ника противников
     "nameFieldOffsetXRight": -10,
     // Width of allies player names field
     // Ширина поля ника союзников
@@ -59,10 +59,10 @@
     // Ширина поля ника противников
     "nameFieldWidthRight": 200,
     // X offset for "formatLeftVehicle" field
-    // Cмещение по оси X поля названия танка союзников
+    // Смещение по оси X поля названия танка союзников
     "vehicleFieldOffsetXLeft": 24,
     // X offset for "formatRightVehicle" field
-    // Cмещение по оси X поля названия танка противников
+    // Смещение по оси X поля названия танка противников
     "vehicleFieldOffsetXRight": 5,
     // Width of "formatLeftVehicle" field
     // Ширина поля названия танка союзников
@@ -72,13 +72,13 @@
     "vehicleFieldWidthRight": 250,
     // X offset for allies vehicle icons
     // Смещение по оси X иконки танка союзников
-    "vehicleIconOffsetXLeft": 4,
+    "vehicleIconOffsetXLeft": 0,
     // X offset for enemies vehicle icons
     // Смещение по оси X иконки танка противников
     "vehicleIconOffsetXRight": 0,
     // X offset for allies frags
     // Смещение по оси X фрагов союзников
-    "fragsFieldOffsetXLeft": 5,
+    "fragsFieldOffsetXLeft": 0,
     // X offset for enemies frags
     // Смещение по оси X фрагов противников
     "fragsFieldOffsetXRight": 0,
