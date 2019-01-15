@@ -14,12 +14,12 @@
     // Dynamic color by various statistical parameters.
     // Динамический цвет по различным статистическим показателям.
     "colorRating": {
-      "very_bad":     "0xFE0E00",   // very bad   / очень плохо
-      "bad":          "0xFE7903",   // bad        / плохо
+      "very_bad":     "0xF2A0A1",   // very bad   / очень плохо
+      "bad":          "0xFFFFFF",   // bad        / плохо
       "normal":       "0xFFFFFF",   // normal     / средне
-      "good":         "0x60FF00",   // good       / хорошо
-      "very_good":    "0x02C9B3",   // very good  / очень хорошо
-      "unique":       "0xD042F3"    // unique     / уникально
+      "good":         "0xFFFFFF",   // good       / хорошо
+      "very_good":    "0xA8C97F",   // very good  / очень хорошо
+      "unique":       "0x89C3EB"    // unique     / уникально
     },
     // Dynamic color by remaining health points.
     // Динамический цвет по оставшемуся запасу прочности.
@@ -215,19 +215,21 @@
     // Динамический цвет по шкале XVM
     // https://koreanrandom.com/forum/topic/2625-/
     "x": [
-      { "value": 16.4, "color": ${"def.colorRating.very_bad" } },
-      { "value": 75.4, "color": ${"def.colorRating.normal"   } },
-      { "value": 92.4, "color": ${"def.colorRating.good"     } },
-      { "value": 999,  "color": ${"def.colorRating.very_good"} }
+      { "value": 16.4, "color": ${"def.colorRating.very_bad" } }, // 00 - 16 - very bad  (20% of players)
+      { "value": 33.4, "color": ${"def.colorRating.bad"      } }, // 17 - 33 - bad       (better than 20% of players)
+      { "value": 52.4, "color": ${"def.colorRating.normal"   } }, // 34 - 52 - normal    (better than 60% of players)
+      { "value": 75.4, "color": ${"def.colorRating.good"     } }, // 53 - 75 - good      (better than 90% of players)
+      { "value": 92.4, "color": ${"def.colorRating.very_good"} }, // 76 - 92 - very good (better than 99% of players)
+      { "value": 999,  "color": ${"def.colorRating.unique"   } }  // 93 - XX - unique    (better than 99.9% of players)
     ],
-    // Текущие граничные значения для рейтингов указаны на данной странице: (TODO) https://nightly.modxvm.com/xvmscales/
-    // Current scales values ​​for ratings are listed on this page: (TODO) https://nightly.modxvm.com/xvmscales/
+    // Current scales values ​​for ratings are listed on this page: https://modxvm.com/en/ratings/xvm-scale/colors/
+    // Текущие граничные значения для рейтингов указаны на данной странице: https://modxvm.com/ru/ratings/xvm-scale/colors/
     //
     // Custom dynamic colors by ratings.
     // If you want use your own color scales,
     // uncomment this block and replace "rating_name" to one of this values: "eff", "wn8", "wtr", "wgr"
     // Динамический цвет по указанному рейтингу.
-    // Если вы хотите использовать свои собственные границы цветов вместо стандартных, 
+    // Если вы хотите использовать свои собственные границы цветов вместо стандартных,
     // раскомментируйте блок и замените "rating_name" на одно из следующих значений: "eff", "wn8", "wtr", "wgr"
     // "rating_name": [
     //  { "value": 500,   "color": ${"def.colorRating.very_bad" } }, //    0 - 500   - very bad
@@ -235,23 +237,22 @@
     //  { "value": 2000,  "color": ${"def.colorRating.normal"   } }, // 1001 - 2000  - normal
     //  { "value": 3000,  "color": ${"def.colorRating.good"     } }, // 2001 - 3000  - good
     //  { "value": 5000,  "color": ${"def.colorRating.very_good"} }, // 3001 - 5000  - very good
-    //  { "value": 99999, "color": ${"def.colorRating.unique"   } }  // 5001 - 99999 - uniquе
+    //  { "value": 99999, "color": ${"def.colorRating.unique"   } }  // 5001 - 99999 - unique
     // ],
     // Dynamic color by win percent
     // Динамический цвет по проценту побед
     "winrate": [
-      { "value": 101, "color": ${"def.colorRating.normal" } }
+      { "value": 100, "color": ${"def.colorRating.normal" } }
     ],
     // Dynamic color by kilo-battles
     // Динамический цвет по количеству кило-боев
     "kb": [
-      { "value": 1,   "color": ${"def.colorRating.very_bad" } },
-      { "value": 999, "color": ${"def.colorRating.normal"   } }
+      { "value": 999, "color": ${"def.colorRating.normal" } }
     ],
     // Dynamic color by average level of player tanks
     // Динамический цвет по среднему уровню танков игрока
     "avglvl": [
-      { "value": 11, "color": ${"def.colorRating.normal" } }
+      { "value": 10, "color": ${"def.colorRating.normal" } }
     ],
     // Dynamic color by battles on current tank
     // Динамический цвет по количеству боев на текущем танке
@@ -286,12 +287,12 @@
     // Dynamic color by damage rating (percents for marks on gun)
     // Динамический цвет по рейтингу урона (процент для отметок на стволе)
     "damageRating": [
-      { "value": 101, "color": ${"def.colorRating.normal" } }
+      { "value": 100, "color": ${"def.colorRating.normal" } }
     ],
     // Dynamic color by hit ratio (percents of hits)
     // Динамический цвет по проценту попаданий
     "hitsRatio": [
-      { "value": 101, "color": ${"def.colorRating.normal" } }
+      { "value": 100, "color": ${"def.colorRating.normal" } }
     ]
   }
 }
