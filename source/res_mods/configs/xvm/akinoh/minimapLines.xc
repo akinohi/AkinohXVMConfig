@@ -37,24 +37,24 @@
        // Own vehicle direction.
        // Направление корпуса своей техники.
        "vehicle": [
-         { "$ref": { "path": "def.vehicle" }, "from": 0, "to": 1500, "thickness": 0.5, "alpha": 50 }
+         { "$ref": { "path": "def.vehicle" }, "from": 0, "to": 2000, "thickness": 0.5, "alpha": 50 }
        ],
        // Camera direction.
        // Направление камеры от своей техники.
        "camera": [
-         { "$ref": { "path": "def.camera" }, "from": 50,    "to": 200,   "thickness": 0.25, "alpha": 60, "color": "0xE60012" },
-         { "$ref": { "path": "def.camera" }, "from": 200,   "to": 300,   "thickness": 0.25, "alpha": 60, "color": "0xF39800" },
-         { "$ref": { "path": "def.camera" }, "from": 300,   "to": 400,   "thickness": 0.25, "alpha": 60, "color": "0xFFF100" },
-         { "$ref": { "path": "def.camera" }, "from": 400,   "to": 500,   "thickness": 0.25, "alpha": 60, "color": "0x009944" },
-         { "$ref": { "path": "def.camera" }, "from": 500,   "to": 600,   "thickness": 0.25, "alpha": 60, "color": "0x0068B7" },
-         { "$ref": { "path": "def.camera" }, "from": 600,   "to": 700,   "thickness": 0.25, "alpha": 60, "color": "0x373AA2" },
-         { "$ref": { "path": "def.camera" }, "from": 700,   "to": 1500,  "thickness": 0.25, "alpha": 60, "color": "0xAC219D" },
-         { "$ref": { "path": "def.dot" },    "from": 199.5, "to": 200.5, "thickness": 2.0,  "alpha": 60, "color": "0xF39800" },
-         { "$ref": { "path": "def.dot" },    "from": 299.5, "to": 300.5, "thickness": 2.0,  "alpha": 60, "color": "0xFFF100" },
-         { "$ref": { "path": "def.dot" },    "from": 399.5, "to": 400.5, "thickness": 2.0,  "alpha": 60, "color": "0x009944" },
-         { "$ref": { "path": "def.dot" },    "from": 499.5, "to": 500.5, "thickness": 2.0,  "alpha": 60, "color": "0x0068B7" },
-         { "$ref": { "path": "def.dot" },    "from": 599.5, "to": 600.5, "thickness": 2.0,  "alpha": 60, "color": "0x1D2088" },
-         { "$ref": { "path": "def.dot" },    "from": 699.5, "to": 700.5, "thickness": 2.0,  "alpha": 60, "color": "0x920783" }
+         { "$ref": { "path": "def.camera" }, "from": 50,    "to": 400,    "thickness": 0.25, "alpha": 60, "color": "0xF2A0A1" },
+         { "$ref": { "path": "def.dot" },    "from": 99.5,  "to": 100.5,  "thickness": 2.0,  "alpha": 60, "color": "0xF2A0A1" },
+         { "$ref": { "path": "def.dot" },    "from": 199.5, "to": 200.5,  "thickness": 2.0,  "alpha": 60, "color": "0xF2A0A1" },
+         { "$ref": { "path": "def.dot" },    "from": 299.5, "to": 300.5,  "thickness": 2.0,  "alpha": 60, "color": "0xF2A0A1" },
+         { "$ref": { "path": "def.dot" },    "from": 399.5, "to": 400.5,  "thickness": 2.0,  "alpha": 60, "color": "0xF2A0A1" },
+         { "$ref": { "path": "def.camera" }, "from": 400,   "to": 700,    "thickness": 0.25, "alpha": 60, "color": "0xA8C97F" },
+         { "$ref": { "path": "def.dot" },    "from": 499.5, "to": 500.5,  "thickness": 2.0,  "alpha": 60, "color": "0xA8C97F" },
+         { "$ref": { "path": "def.dot" },    "from": 599.5, "to": 600.5,  "thickness": 2.0,  "alpha": 60, "color": "0xA8C97F" },
+         { "$ref": { "path": "def.dot" },    "from": 699.5, "to": 700.5,  "thickness": 2.0,  "alpha": 60, "color": "0xA8C97F" },
+         { "$ref": { "path": "def.camera" }, "from": 700,   "to": 1500,   "thickness": 0.25, "alpha": 60, "color": "0x89C3EB" },
+         { "$ref": { "path": "def.dot" },    "from": 799.5, "to": 800.5,  "thickness": 2.0,  "alpha": 60, "color": "0x89C3EB" },
+         { "$ref": { "path": "def.dot" },    "from": 899.5, "to": 900.5,  "thickness": 2.0,  "alpha": 60, "color": "0x89C3EB" },
+         { "$ref": { "path": "def.dot" },    "from": 999.5, "to": 1000.5, "thickness": 2.0,  "alpha": 60, "color": "0x89C3EB" }
        ],
        // Gun traverse angles may differ depending on vehicle angle relative to ground. See pics at https://goo.gl/ZqlPa
        // Углы горизонтальной наводки могут меняться в зависимости от углов постановки машины на склонах местности. Подробнее по ссылке: https://goo.gl/ZqlPa
