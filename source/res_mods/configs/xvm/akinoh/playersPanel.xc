@@ -575,8 +575,8 @@
       "nickMaxWidth": 134,
       // Display format for player nickname (macros allowed, see macros.txt).
       // Формат отображения имени игрока (допускаются макроподстановки, см. macros.txt).
-      "nickFormatLeft": "<font face='mono' size='{{xvm-stat?13|0}}' color='{{c:xr}}' alpha='{{alive?#FF|#80}}'>{{r|--}}</font> {{name%.15s~..}}<font alpha='#A0'>{{clan}}</font>",
-      "nickFormatRight": "<font alpha='#A0'>{{clan}}</font>{{name%.12s~..}} <font face='mono' size='{{xvm-stat?13|0}}' color='{{c:xr}}' alpha='{{alive?#FF|#80}}'>{{r}}</font>",
+      "nickFormatLeft": "<font color='{{c:xr}}' alpha='{{alive?#FF|#80}}'>{{name%.12s~..}}</font><font alpha='#A0'>{{clan}}</font>",
+      "nickFormatRight": "<font alpha='#A0'>{{clan}}</font><font color='{{c:xr}}' alpha='{{alive?#FF|#80}}'>{{name%.12s~..}}</font>",
       // Shadow for player name field (default null = no shadow, as in vanillas client).
       // Тень для поля имени игрока (по умолчанию null = без тени, как в чистом клиенте).
       "nickShadowLeft": null,
