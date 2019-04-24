@@ -26,10 +26,10 @@
     // Text for {{marksOnGun}}, {{v.marksOnGun}} macros.
     // Текст для макросов {{marksOnGun}}, {{v.marksOnGun}}.
     "marksOnGun": {
-      "_0": "0",
-      "_1": "1",
-      "_2": "2",
-      "_3": "3"
+      "_0": "",
+      "_1": "<img src='xvm://res/akinoh/mog1.png'>",
+      "_2": "<img src='xvm://res/akinoh/mog2.png'>",
+      "_3": "<img src='xvm://res/akinoh/mog3.png'>"
     },
     // Text for {{spotted}} macro.
     // Текст для макроса {{spotted}}.

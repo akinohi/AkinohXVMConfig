@@ -70,12 +70,8 @@
     // Marks on Gun definition.
     "marksOnGun": {
       "hotKeyCode": 56, "onHold": "true", "visibleOnHotKey": true,
-      "x": 147, "y": 5, "width": 24, "height": 24, "align": "center", "bindToIcon": true,
-      "textFormat": { "font": "$FieldFont", "size": 12, "bold": "true" },
-      "alpha": "{{marksOnGun>0?100|0}}", "format": "{{marksOnGun}}",
-      "shadow": {
-        "alpha": 100, "color": "0x000000", "angle": 45, "distance": 0, "size": 5, "strength": 1
-      }
+      "x": 147, "y": -2, "width": 40, "height": 24, "align": "center", "bindToIcon": true,
+      "alpha": 100, "format": "{{marksOnGun}}"
     },
     // Marks for SPGs
     "merksForSPGs": { "x": 0, "y": 0, "width": 3, "height": 23, "bindToIcon": false, "alpha": "{{vtype-key=SPG?100|0}}", "bgColor": "{{c:vtype}}" },
