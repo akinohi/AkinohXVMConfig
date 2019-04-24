@@ -67,7 +67,15 @@
       "alpha": 100, "format": "{{marksOnGun}}"
     },
     // Marks for SPGs
-    "marksForSPGs": { "x": 0, "y": 0, "width": 3, "height": 23, "bindToIcon": false, "alpha": "{{vtype-key=SPG?100|0}}", "bgColor": "{{c:vtype}}" },
+    "marksForSPGs": {
+      "x": -4,
+      "y": 0,
+      "width": 6,
+      "height": 12,
+      "bindToIcon": true,
+      "alpha": "{{vtype-key=SPG?50|0}}",
+      "bgColor": "{{c:vtype}}"
+    },
     // HP bar background.
     // Подложка индикатора HP.
     "hpBarBg": { "x": 0, "y": 23, "width": "{{hp-max:{{pp.widthLeft}}}}", "height": 1, "bindToIcon": false, "alpha": 50, "bgColor": "0xFFFFFF" },
