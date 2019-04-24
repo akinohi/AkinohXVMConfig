@@ -33,13 +33,6 @@
       // настройки тени (см. ниже).
       "shadow": {}
     },
-    // "Top tankers" rank definition.
-    // Шаблон позиции в "Танковых асах".
-    "topTankers": {
-      "hotKeyCode": 56, "onHold": "true", "visibleOnHotKey": true,
-      "x": 127, "y": 6, "width": 14, "height": 14, "align": "center", "bindToIcon": true,
-      "src": "{{top_tankers_emblem}}"
-    },
     // XMQP service marker definition.
     // Шаблон маркера сервиса XMQP.
     "xmqpServiceMarker": {
@@ -279,7 +272,6 @@
         ${"def.hpBarBg"},
         ${"def.hpBar"},
         ${"def.hp"},
-        ${"def.topTankers"},
         ${"def.marksOnGun"}
       ],
       // Set of formats for right panel (extended format supported, see above).
@@ -290,7 +282,6 @@
         ${"def.hpBar"},
         ${"def.hp"},
         ${"def.enemySpottedMarker"},
-        ${"def.topTankers"},
         ${"def.marksOnGun"}
       ]
     },
@@ -394,7 +385,6 @@
         ${"def.hpBarBg"},
         ${"def.hpBar"},
         ${"def.hp"},
-        ${"def.topTankers"},
         ${"def.marksOnGun"}
       ],
       // Set of formats for right panel (extended format supported, see above).
@@ -405,7 +395,6 @@
         ${"def.hpBar"},
         ${"def.hp"},
         ${"def.enemySpottedMarker"},
-        ${"def.topTankers"},
         ${"def.marksOnGun"}
       ]
     },
@@ -509,7 +498,6 @@
         ${"def.hpBarBg"},
         ${"def.hpBar"},
         ${"def.hp"},
-        ${"def.topTankers"},
         ${"def.marksOnGun"}
       ],
       // Set of formats for right panel (extended format supported, see above).
@@ -520,7 +508,6 @@
         ${"def.hpBar"},
         ${"def.hp"},
         ${"def.enemySpottedMarker"},
-        ${"def.topTankers"},
         ${"def.marksOnGun"}
       ]
     },
@@ -621,7 +608,6 @@
         ${"def.hpBarBg"},
         ${"def.hpBar"},
         ${"def.hp"},
-        ${"def.topTankers"},
         ${"def.marksOnGun"}
       ],
       // Set of formats for right panel (extended format supported, see above).
@@ -632,7 +618,6 @@
         ${"def.hpBar"},
         ${"def.hp"},
         ${"def.enemySpottedMarker"},
-        ${"def.topTankers"},
         ${"def.marksOnGun"}
       ]
     }
