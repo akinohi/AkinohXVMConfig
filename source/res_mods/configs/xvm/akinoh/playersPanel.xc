@@ -67,7 +67,7 @@
       "alpha": 100, "format": "{{marksOnGun}}"
     },
     // Marks for SPGs
-    "merksForSPGs": { "x": 0, "y": 0, "width": 3, "height": 23, "bindToIcon": false, "alpha": "{{vtype-key=SPG?100|0}}", "bgColor": "{{c:vtype}}" },
+    "marksForSPGs": { "x": 0, "y": 0, "width": 3, "height": 23, "bindToIcon": false, "alpha": "{{vtype-key=SPG?100|0}}", "bgColor": "{{c:vtype}}" },
     // HP bar background.
     // Подложка индикатора HP.
     "hpBarBg": { "x": 0, "y": 23, "width": "{{hp-max:{{pp.widthLeft}}}}", "height": 1, "bindToIcon": false, "alpha": 50, "bgColor": "0xFFFFFF" },
@@ -268,7 +268,7 @@
       // Set of formats for left panel (extended format supported, see above).
       // Набор форматов для левой панели (поддерживается расширенный формат, см. выше).
       "extraFieldsLeft": [
-        ${"def.merksForSPGs"},
+        ${"def.marksForSPGs"},
         ${"def.hpBarBg"},
         ${"def.hpBar"},
         ${"def.hp"},
@@ -277,7 +277,7 @@
       // Set of formats for right panel (extended format supported, see above).
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше).
       "extraFieldsRight": [
-        ${"def.merksForSPGs"},
+        ${"def.marksForSPGs"},
         ${"def.hpBarBg"},
         ${"def.hpBar"},
         ${"def.hp"},
@@ -381,7 +381,7 @@
       // Set of formats for left panel (extended format supported, see above).
       // Набор форматов для левой панели (поддерживается расширенный формат, см. выше).
       "extraFieldsLeft": [
-        ${"def.merksForSPGs"},
+        ${"def.marksForSPGs"},
         ${"def.hpBarBg"},
         ${"def.hpBar"},
         ${"def.hp"},
@@ -390,7 +390,7 @@
       // Set of formats for right panel (extended format supported, see above).
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше).
       "extraFieldsRight": [
-        ${"def.merksForSPGs"},
+        ${"def.marksForSPGs"},
         ${"def.hpBarBg"},
         ${"def.hpBar"},
         ${"def.hp"},
@@ -494,7 +494,7 @@
       // Set of formats for left panel (extended format supported, see above).
       // Набор форматов для левой панели (поддерживается расширенный формат, см. выше).
       "extraFieldsLeft": [
-        ${"def.merksForSPGs"},
+        ${"def.marksForSPGs"},
         ${"def.hpBarBg"},
         ${"def.hpBar"},
         ${"def.hp"},
@@ -503,7 +503,7 @@
       // Set of formats for right panel (extended format supported, see above).
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше).
       "extraFieldsRight": [
-        ${"def.merksForSPGs"},
+        ${"def.marksForSPGs"},
         ${"def.hpBarBg"},
         ${"def.hpBar"},
         ${"def.hp"},
@@ -604,7 +604,7 @@
       // Set of formats for left panel (extended format supported, see above).
       // Набор форматов для левой панели (поддерживается расширенный формат, см. выше).
       "extraFieldsLeft": [
-        ${"def.merksForSPGs"},
+        ${"def.marksForSPGs"},
         ${"def.hpBarBg"},
         ${"def.hpBar"},
         ${"def.hp"},
@@ -613,7 +613,7 @@
       // Set of formats for right panel (extended format supported, see above).
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше).
       "extraFieldsRight": [
-        ${"def.merksForSPGs"},
+        ${"def.marksForSPGs"},
         ${"def.hpBarBg"},
         ${"def.hpBar"},
         ${"def.hp"},
